@@ -85,10 +85,25 @@ namespace WebApplication1.Controllers
                 case SignInStatus.RequiresVerification:
                     return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
                 case SignInStatus.Failure:
+                    {
+                        var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                        var res = await UserManager.CreateAsync(user, model.Password);
+                        if (res.Succeeded)
+                        {
+                            await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
+                            TempData["ss"]= "Success!You were registered";
+                            return RedirectToAction("Index", "Home");
+                        }
+                    }
+                    break;
                 default:
-                    ModelState.AddModelError("", "Invalid login attempt.");
-                    return View(model);
+                    {
+                        ModelState.AddModelError("", "Invalid login attempt.");
+                    }
+                    break;
+                   
             }
+            return View(model);
         }
 
         //
@@ -156,13 +171,13 @@ namespace WebApplication1.Controllers
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
-                    
+
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
                     // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
-
+                    ViewBag.Success = "Success!You were registered";
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
