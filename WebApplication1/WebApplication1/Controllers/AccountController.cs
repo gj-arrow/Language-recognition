@@ -91,7 +91,7 @@ namespace WebApplication1.Controllers
                         if (res.Succeeded)
                         {
                             await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                            TempData["ss"]= "Success!You were registered";
+                            TempData["success"]= "Success!You were registered";
                             return RedirectToAction("Index", "Home");
                         }
                     }
@@ -407,7 +407,7 @@ namespace WebApplication1.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Account");
         }
 
         //

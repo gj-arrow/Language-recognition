@@ -16,9 +16,35 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.col {
+    margin:0px;
+    width:510px;
+    height:680px;
+}
+
+.right-col {
+    margin-top:14px;
+}
+
+
+.left-col {
+    resize:none;
+}
+
+.lbl-sgn-in {
+    text-align:center;
+    margin-top: 14%;
+}
+
+h3 {
+    color:white;
+}
+
+.marg-top {
+    margin-top:5%;
+}
+
+.usr-name {
+    color: white;
+    padding: 5px;
 }

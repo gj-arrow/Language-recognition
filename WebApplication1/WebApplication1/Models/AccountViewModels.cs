@@ -6,7 +6,7 @@ namespace WebApplication1.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
-        [Display(Name = "Email")]
+        [Display(Name = "Login")]
         public string Email { get; set; }
     }
 
