@@ -32,7 +32,6 @@
 }
 
 .lbl-sgn-in {
-    text-align:center;
     margin-top: 14%;
 }
 
@@ -47,4 +46,8 @@ h3 {
 .usr-name {
     color: white;
     padding: 5px;
+}
+
+.center {
+    text-align:center;
 }

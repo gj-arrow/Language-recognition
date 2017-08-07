@@ -91,8 +91,11 @@ namespace WebApplication1.Controllers
                         if (res.Succeeded)
                         {
                             await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                            TempData["success"]= "Success!You were registered";
+                            TempData["success"] = "Success!You were registered";
                             return RedirectToAction("Index", "Home");
+                        }
+                        else {
+                            ModelState.AddModelError("", res.Errors.First());
                         }
                     }
                     break;

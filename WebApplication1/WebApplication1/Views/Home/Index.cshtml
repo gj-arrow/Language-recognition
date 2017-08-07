@@ -2,10 +2,10 @@
     ViewBag.Title = "Home Page";
 }
 
-<div>
-    @if (TempData["ss"] != null)
+<div class="center">
+    @if (TempData["success"] != null)
     {
-        <h1>@TempData["success"]</h1>
+        <h2>@TempData["success"]</h2>
     }
 </div>
 
