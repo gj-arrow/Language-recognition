@@ -700,7 +700,7 @@ namespace AspNet.Identity.SQLite
         /// <returns></returns>
         public Task SetLockoutEnabledAsync(TUser user, bool enabled)
         {
-            user.LockoutEnabled = false;
+            user.LockoutEnabled = true;
             userTable.Update(user);
 
             return Task.FromResult(0);

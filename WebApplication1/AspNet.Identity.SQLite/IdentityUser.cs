@@ -86,5 +86,11 @@ namespace AspNet.Identity.SQLite
         ///     Used to record failures for the purposes of lockout
         /// </summary>
         public virtual int AccessFailedCount { get; set; }
+
+        public virtual int CountRequest { get; set; }
+
+        public virtual string AverageIntervalBetweenRequest { get; set; }
+
+        public virtual DateTime? DateLastLogin{ get; set; }
     }
 }

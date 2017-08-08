@@ -18,7 +18,7 @@
 
 .col {
     margin:0px;
-    width:510px;
+    width:460px;
     height:680px;
 }
 
@@ -87,7 +87,10 @@ label {
 }
 
 
-.hlight{background-color:#ffcc00;}
+.hlight{
+    background-color:#ffcc00;
+
+}
 
 span.tooltip {
     position: unset; 
@@ -96,4 +99,12 @@ span.tooltip {
     line-height: 1.4; 
     opacity: 1; 
     visibility: visible; 
+}
+
+.td-center{
+    text-align:center;
+
+}
+.navbar-inverse {
+    background-color: #cecece;
 }
