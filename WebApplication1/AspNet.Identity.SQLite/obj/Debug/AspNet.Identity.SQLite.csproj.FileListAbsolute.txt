@@ -50,3 +50,21 @@ D:\Student\OmegaSoftWare\Новая папка\WebApplication1\AspNet.Identity.S
 D:\Student\OmegaSoftWare\Новая папка\WebApplication1\AspNet.Identity.SQLite\obj\Debug\AspNet.Identity.SQLite.csprojResolveAssemblyReference.cache
 D:\Student\OmegaSoftWare\Новая папка\WebApplication1\AspNet.Identity.SQLite\obj\Debug\AspNet.Identity.SQLite.dll
 D:\Student\OmegaSoftWare\Новая папка\WebApplication1\AspNet.Identity.SQLite\obj\Debug\AspNet.Identity.SQLite.pdb
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\AspNet.Identity.SQLite.dll.config
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\AspNet.Identity.SQLite.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\AspNet.Identity.SQLite.pdb
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\Antlr3.Runtime.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\EntityFramework.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\EntityFramework.SqlServer.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\System.Data.SQLite.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\Antlr3.Runtime.pdb
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\EntityFramework.xml
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\EntityFramework.SqlServer.xml
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\bin\Debug\System.Data.SQLite.xml
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\obj\Debug\AspNet.Identity.SQLite.csprojResolveAssemblyReference.cache
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\obj\Debug\AspNet.Identity.SQLite.dll
+D:\Task\TaskRepository\WebApplication1\AspNet.Identity.SQLite\obj\Debug\AspNet.Identity.SQLite.pdb

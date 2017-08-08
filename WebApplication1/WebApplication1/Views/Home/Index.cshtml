@@ -5,15 +5,103 @@
 <div class="center">
     @if (TempData["success"] != null)
     {
-        <h2>@TempData["success"]</h2>
+        <p class="alert alert-success" id="successMessage">@TempData["success"]</p>
     }
 </div>
 
+
+<div class="messagepop pop">
+    <p><label for="body">Message</label><textarea rows="6" name="body" id="body" cols="35"></textarea></p>
+</div>
+
+<a href="/contact" id="contact" style="padding:5%">Contact Us</a>
+
 <div class="row marg-top">
     <div class="col-md-6 panel-body">
-        <textarea class="col left-col"></textarea>
+        <textarea id="input" class="col left-col"></textarea>
+
+        <div id="result">
+            <p>Words output</p>
+            <div></div>
+        </div>
     </div>
+
     <div class="col-md-6 panel panel-default col right-col">
 
     </div>
 </div>
+
+
+<script>
+    $.fn.slideFadeToggle = function (easing, callback) {
+        return this.animate({ opacity: 'toggle', height: 'toggle' }, 'medium', easing, callback);
+    }
+
+    function deselect(e) {
+        $('.pop').slideFadeToggle(function () {
+            e.removeClass('selected');
+        });
+    }
+
+    $(function () {
+        $('#contact').on('mouseenter', function () {
+            if ($(this).hasClass('selected')) {
+                deselect($(this));
+            } else {
+                $(this).addClass('selected');
+                $('.pop').slideFadeToggle();
+            }
+            return false;
+        });
+
+        $('.messagepop').on('mouseleave', function () {
+            deselect($('#contact'));
+            return false;
+        });
+    });
+
+
+
+    //$(document).ready(function () {
+    //    //comment...easy
+    //    $('textarea#input').bind('blur keyup', function () {
+    //        //comment
+    //        $('#result div').text($('textarea#input').val());
+    //        $('#result div')
+    //            .html('<span>' + $('#result div')
+    //                .html().replace(/( |, |\. )/g, '</span>$1<span>').replace(/\n/g, '</span><br /><br /><span>') + '</span>')
+
+    //        $('span').hover(
+    //        function () { $(this).css('background-color', '#ffff66').text() },
+    //        function () { $(this).css('background-color', ''); });
+
+    //    });/* /.bind */
+    //});
+
+    $(document).ready(function () {
+        $('textarea#input').bind('blur keyup', function () {
+            $('#result div').text($('textarea#input').val());
+            editTxt('#result div');
+    $('span').live('mouseover', function() {
+        $(this).addClass('hlight');
+    });
+    $('span').live('mouseout', function() {
+        $(this).removeClass('hlight');
+    });
+    });
+
+    function editTxt(selector) {
+        $(function() {
+            var newHtml = '';
+            var words = $(selector).html().split(' ');
+            for (i = 0; i < words.length; i++) {
+                if(words[i].length>=4)
+                    newHtml += '<span>' + words[i] + '</span> ';
+                else newHtml +=  ' '+ words[i] + ' ';
+            }
+            $(selector).html(newHtml);
+        });
+    }
+    });
+
+</script>
