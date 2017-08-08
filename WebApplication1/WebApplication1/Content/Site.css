@@ -88,3 +88,12 @@ label {
 
 
 .hlight{background-color:#ffcc00;}
+
+span.tooltip {
+    position: unset; 
+    display: unset; 
+    font-size: 14px; 
+    line-height: 1.4; 
+    opacity: 1; 
+    visibility: visible; 
+}
