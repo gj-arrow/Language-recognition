@@ -108,3 +108,8 @@ span.tooltip {
 .navbar-inverse {
     background-color: #cecece;
 }
+
+div.editable {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
