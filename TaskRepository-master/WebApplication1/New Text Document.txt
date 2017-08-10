@@ -21,6 +21,4 @@ https://algorithmia.com/algorithms/nlp/LanguageIdentification
 https://developer.rosette.com/
 
 ne smotrel
-https://github.com/kent37/guess-language
-http://tika.apache.org/1.5/detection.html#Language_Detection
-https://code.google.com/archive/p/language-detection/
+https://languagelayer.com/documentation#python
