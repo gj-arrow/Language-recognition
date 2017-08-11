@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using AspNet.Identity.SQLite;
 
 namespace WebApplication1.Models.ViewModel
 {
@@ -11,7 +9,7 @@ namespace WebApplication1.Models.ViewModel
 
         public string UserName { get; set; }
 
-        public int CountRequest { get; set; }
+        public int CountRequests { get; set; }
 
         public string AverageIntervalBetweenRequest { get; set; }
 

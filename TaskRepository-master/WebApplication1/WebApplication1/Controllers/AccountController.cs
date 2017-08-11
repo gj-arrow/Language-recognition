@@ -94,7 +94,7 @@ namespace WebApplication1.Controllers
                         if (res.Succeeded)
                         {
                             await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
-                             userTable.UpdateDateLastLogin(model.Email, DateTime.Now);
+                             //userTable.UpdateDateLastLogin(model.Email, DateTime.Now);
                             TempData["success"] = "Success!You were registered";
                             return RedirectToAction("Index", "Home");
                         }

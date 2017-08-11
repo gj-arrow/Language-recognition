@@ -1,5 +1,4 @@
-﻿@model IEnumerable<WebApplication1.Models.ViewModel.TopUser>
-@{
+﻿@{
     ViewBag.Title = "Home Page";
 }
 <div class="center">
@@ -20,31 +19,10 @@
         </div>
     </div>
 
-    <div class="col-md-7 panel panel-default right-col">
-        <h3 style="color:black" class=td-center>Top 10 Requests</h3>
-        <div class="panel-body">
-            <table class="table">
-                <thead>
-                    <tr class="top_label">
-                        <th colspan="2">User</th>
-                        <th colspan="2">Last Login</th>
-                        <th colspan="2">Aver Interval Between Request</th>
-                        <th colspan="1">Count Request</th>
-                    </tr>
-                </thead>
-                @foreach (var item in Model)
-               {   
-                    <tr>
-                        <td colspan="2">@item.UserName</td>
-                        <td colspan="2">@item.DateLastLogin</td>
-                        <td colspan="2" class="td-center">@item.AverageIntervalBetweenRequest hours</td>
-                        <td colspan="1" class="td-center">@item.CountRequest</td>
-                    </tr>
-                }
-            </table>
-        </div>
-
+    <div id="topUsers">
     </div>
+
+
     <button id="qwe" class="click">click to add text</button>
 </div>
 
@@ -255,6 +233,11 @@ function deselect(e) {
 
 
 $(document).ready(function () {
+    $.ajax("/Home/GetTopUsers", {
+        success: function (data) {
+            $('#topUsers').html(data)
+        }
+    });
     xOffset = 10;
     yOffset = 30;
     $('#input').bind('blur change', function () {
@@ -264,7 +247,6 @@ $(document).ready(function () {
             var text = $(this).text();
             $.ajax("/Home/Translator?text="+text, {
                 success: function (data) {
-
                     var str = "";
                     for (var item in data)
                     {
@@ -277,11 +259,15 @@ $(document).ready(function () {
                         .fadeIn("fast");
                  }
             });
-
         });
         $('span').on('mouseout', function() {
             $(this).removeClass('hlight');
-                deselect($('#contact'));
+            deselect($('#contact'));
+            $.ajax("/Home/GetTopUsers", {
+                success: function (data) {
+                    $('#topUsers').html(data)
+                }
+            });
         });
 });
 

@@ -4,15 +4,21 @@ using AspNet.Identity.SQLite;
 using WebApplication1.Models.ViewModel;
 using rosette_api;
 using System;
+using Microsoft.AspNet.Identity;
 
 namespace WebApplication1.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public UserTable<IdentityUser> userTable = new UserTable<IdentityUser>(new SQLiteDatabase());
 
-        [Authorize]
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        public PartialViewResult GetTopUsers()
         {
             IEnumerable<IdentityUser> users = userTable.GetTopUsers();
             List<TopUser> topUsers = new List<TopUser>();
@@ -20,18 +26,19 @@ namespace WebApplication1.Controllers
             {
                 TopUser topUser = new TopUser();
                 topUser.UserName = user.UserName;
-                topUser.AverageIntervalBetweenRequest = user.AverageIntervalBetweenRequest;
-                topUser.CountRequest = user.CountRequest;
+                topUser.AverageIntervalBetweenRequest = string.Format("{0:hh\\:mm\\:ss}", userTable.GetAverageTimeBetweenRequests(user.Id));
+                topUser.CountRequests = user.CountRequests;
                 topUser.DateLastLogin = user.DateLastLogin;
                 topUsers.Add(topUser);
             }
-            return View(topUsers);
+            return PartialView("_TopUsers",topUsers);
         }
+
 
         [HttpGet]
         public JsonResult Translator(string text)
         {
-            userTable.IncreaseCountRequest(HttpContext.User.Identity.Name);
+            userTable.IncreaseCountRequest(text, User.Identity.GetUserId());
             Dictionary<string, string> lang = new Dictionary<string, string> { { "rus", "Russian" }, { "eng", "English" }, { "spa", "Spanish" }, { "bul", "Bulgarian" }, { "por", "Portuguese" } };
             Dictionary<string, string> dict = new Dictionary<string, string>();
             string apikey = "f9bf8b17393cda27b043da452c0d002e";
@@ -56,6 +63,18 @@ namespace WebApplication1.Controllers
                 }
             }
             return Json(dict, JsonRequestBehavior.AllowGet);
+        }
+
+
+
+        [HttpGet]
+        public JsonResult Example(string text)
+        {
+            string apikey = "f9bf8b17393cda27b043da452c0d002e";
+            CAPI LanguageCAPI = new CAPI(apikey);
+            LanguageCAPI.SetCustomHeaders("X-RosetteAPI-App", "csharp-app");
+            LanguageIdentificationResponse response = LanguageCAPI.Language(text);
+            return Json(response, JsonRequestBehavior.AllowGet);
         }
 
     }

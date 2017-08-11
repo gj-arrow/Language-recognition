@@ -1,4 +1,23 @@
-﻿
+﻿CREATE TABLE IF NOT EXISTS 'UserRequests' ( 
+  Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  Name varchar(256) NOT NULL,
+  DateTimeRequest varchar(256) NOT NULL,
+  UserId varchar(128) NOT NULL,
+  FOREIGN KEY (UserId) REFERENCES AspNetUsers (Id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS 'SavedRequests' ( 
+  Id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+  Name varchar(256) NOT NULL,
+  Russian varchar(128) NOT NULL,
+  English varchar(256) NOT NULL,
+  Spanish varchar(128) NOT NULL,
+  Bulgarian varchar(128) NOT NULL,
+  Portuguese varchar(128) NOT NULL
+);
+
+
+
 CREATE TABLE IF NOT EXISTS 'AspNetRoles' ( 
   Id varchar(128) NOT NULL,
   Name varchar(256) NOT NULL,
@@ -19,6 +38,7 @@ CREATE TABLE IF NOT EXISTS 'AspNetUsers' (
  AccessFailedCount int (11) NOT NULL,
  UserName varchar (256) NOT NULL,
  IsActivated tinyint(1) NOT NULL DEFAULT (0),
+ DateLastLogin varchar (256) NOT NULL,
  PRIMARY KEY (Id));
 
 CREATE TABLE IF NOT EXISTS 'AspNetUserClaims' ( 

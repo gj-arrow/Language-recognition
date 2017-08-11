@@ -53,20 +53,54 @@ namespace AspNet.Identity.SQLite
 
         public IEnumerable<TUser> GetTopUsers()
         {
-             string commandText = "Select UserName, CountRequest, DateLastLogin, AverageIntervalBetweenRequest from AspNetUsers ORDER BY CountRequest DESC LIMIT 3";
+             string commandText = @"Select Id, UserName, DateLastLogin, (Select COUNT(Id) From UserRequests WHERE UserId = AspNetUsers.Id) AS CountRequests 
+                from AspNetUsers ORDER BY CountRequests DESC LIMIT 10";
             List<TUser> userlist = new List<TUser>();
             var rows = _database.Query(commandText, null);
             foreach (var row in rows)
             {
                 TUser user = null;
                 user = (TUser)Activator.CreateInstance(typeof(TUser));
+                user.Id = row["Id"];
                 user.UserName = row["UserName"];
-                user.CountRequest = string.IsNullOrEmpty(row["CountRequest"]) ? 0 : int.Parse(row["CountRequest"]);
-                user.AverageIntervalBetweenRequest = string.IsNullOrEmpty(row["AverageIntervalBetweenRequest"]) ? null : (row["AverageIntervalBetweenRequest"]);
                 user.DateLastLogin = string.IsNullOrEmpty(row["DateLastLogin"]) ? DateTime.Now : DateTime.Parse(row["DateLastLogin"]);
+                user.CountRequests = string.IsNullOrEmpty(row["CountRequests"]) ? 0 : int.Parse(row["CountRequests"]);
                 userlist.Add(user);
             }
             return userlist;
+        }
+
+
+        public TimeSpan GetAverageTimeBetweenRequests(string userId)
+        {
+            TimeSpan averageTime = new TimeSpan();
+            string commandText = @"Select DateTimeRequest from UserRequests Where UserId = @userId";
+            Dictionary<string, object> parameters = new Dictionary<string, object>() { { "@userId", userId } };
+            var rows = _database.Query(commandText, parameters);
+            if (rows.Count!=0) {
+                DateTime[] TimeRequestslist = new DateTime[rows.Count];
+                List<TimeSpan> temp = new List<TimeSpan>();
+                int i = 0;
+                foreach (var row in rows)
+                {
+                    TimeRequestslist[i] = DateTime.Parse(row["DateTimeRequest"]);
+                    i++;
+                }
+
+                for (int j = 0; j < TimeRequestslist.Length; j++)
+                {
+                    if (j != 0)
+                        temp.Add(TimeRequestslist[j] - TimeRequestslist[j - 1]);
+                }
+
+                foreach (var item in temp)
+                {
+                    averageTime += item;
+                }
+                averageTime = new TimeSpan(averageTime.Ticks / rows.Count);
+            }
+               
+            return averageTime;
         }
 
         /// <summary>
@@ -94,8 +128,8 @@ namespace AspNet.Identity.SQLite
                 user.LockoutEnabled = row["LockoutEnabled"] == "1" ? true : false;
                 user.LockoutEndDateUtc = string.IsNullOrEmpty(row["LockoutEndDateUtc"]) ? DateTime.Now : DateTime.Parse(row["LockoutEndDateUtc"]);
                 user.AccessFailedCount = string.IsNullOrEmpty(row["AccessFailedCount"]) ? 0 : int.Parse(row["AccessFailedCount"]);
-                user.CountRequest = string.IsNullOrEmpty(row["CountRequest"]) ? 0 : int.Parse(row["CountRequest"]);
-                user.AverageIntervalBetweenRequest = string.IsNullOrEmpty(row["AverageIntervalBetweenRequest"]) ? null :(row["AverageIntervalBetweenRequest"]);
+                //user.CountRequest = string.IsNullOrEmpty(row["CountRequest"]) ? 0 : int.Parse(row["CountRequest"]);
+                //user.AverageIntervalBetweenRequest = string.IsNullOrEmpty(row["AverageIntervalBetweenRequest"]) ? null :(row["AverageIntervalBetweenRequest"]);
                 user.DateLastLogin = string.IsNullOrEmpty(row["DateLastLogin"]) ? DateTime.Now : DateTime.Parse(row["DateLastLogin"]);
                 userlist.Add(user);
             }
@@ -130,11 +164,8 @@ namespace AspNet.Identity.SQLite
                 user.LockoutEnabled = row["LockoutEnabled"] == "1" ? true : false;
                 user.LockoutEndDateUtc = string.IsNullOrEmpty(row["LockoutEndDateUtc"]) ? DateTime.Now : DateTime.Parse(row["LockoutEndDateUtc"]);
                 user.AccessFailedCount = string.IsNullOrEmpty(row["AccessFailedCount"]) ? 0 : int.Parse(row["AccessFailedCount"]);
-                user.CountRequest = string.IsNullOrEmpty(row["CountRequest"]) ? 0 : int.Parse(row["CountRequest"]);
-                user.AverageIntervalBetweenRequest = string.IsNullOrEmpty(row["AverageIntervalBetweenRequest"]) ? null : (row["AverageIntervalBetweenRequest"]);
                 user.DateLastLogin = string.IsNullOrEmpty(row["DateLastLogin"]) ? DateTime.Now : DateTime.Parse(row["DateLastLogin"]);
             }
-
             return user;
         }
 
@@ -165,8 +196,6 @@ namespace AspNet.Identity.SQLite
                 user.TwoFactorEnabled = row["TwoFactorEnabled"] == "1" ? true : false;
                 user.LockoutEndDateUtc = string.IsNullOrEmpty(row["LockoutEndDateUtc"]) ? DateTime.Now : DateTime.Parse(row["LockoutEndDateUtc"]);
                 user.AccessFailedCount = string.IsNullOrEmpty(row["AccessFailedCount"]) ? 0 : int.Parse(row["AccessFailedCount"]);
-                user.CountRequest = string.IsNullOrEmpty(row["CountRequest"]) ? 0 : int.Parse(row["CountRequest"]);
-                user.AverageIntervalBetweenRequest = string.IsNullOrEmpty(row["AverageIntervalBetweenRequest"]) ? null : (row["AverageIntervalBetweenRequest"]);
                 user.DateLastLogin = string.IsNullOrEmpty(row["DateLastLogin"]) ? DateTime.Now : DateTime.Parse(row["DateLastLogin"]);
                 users.Add(user);
             }
@@ -236,8 +265,8 @@ namespace AspNet.Identity.SQLite
         /// <returns></returns>
         public int Insert(TUser user)
         {
-            string commandText = @"Insert into AspNetUsers (UserName, Id, PasswordHash, SecurityStamp,Email,EmailConfirmed,PhoneNumber,PhoneNumberConfirmed, AccessFailedCount,LockoutEnabled,LockoutEndDateUtc,TwoFactorEnabled,CountRequest,DateLastLogin,AverageIntervalBetweenRequest)
-                values (@name, @id, @pwdHash, @SecStamp,@email,@emailconfirmed,@phonenumber,@phonenumberconfirmed,@accesscount,@lockoutenabled,@lockoutenddate,@twofactorenabled,@countrequest,@datelastlogin,@averageintervalbetweenrequest)";
+            string commandText = @"Insert into AspNetUsers (UserName, Id, PasswordHash, SecurityStamp,Email,EmailConfirmed,PhoneNumber,PhoneNumberConfirmed, AccessFailedCount,LockoutEnabled,LockoutEndDateUtc,TwoFactorEnabled,DateLastLogin)
+                values (@name, @id, @pwdHash, @SecStamp,@email,@emailconfirmed,@phonenumber,@phonenumberconfirmed,@accesscount,@lockoutenabled,@lockoutenddate,@twofactorenabled,@datelastlogin)";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("@name", user.UserName);
             parameters.Add("@id", user.Id);
@@ -251,10 +280,9 @@ namespace AspNet.Identity.SQLite
             parameters.Add("@lockoutenabled", user.LockoutEnabled);
             parameters.Add("@lockoutenddate", user.LockoutEndDateUtc);
             parameters.Add("@twofactorenabled", user.TwoFactorEnabled);
-            parameters.Add("@countrequest", user.CountRequest);
-            parameters.Add("@datelastlogin", user.DateLastLogin);
-            parameters.Add("@averageintervalbetweenrequest", user.AverageIntervalBetweenRequest);
-
+            //parameters.Add("@countrequest", user.CountRequest);
+            //parameters.Add("@averageintervalbetweenrequest", user.AverageIntervalBetweenRequest);
+            parameters.Add("@datelastlogin", DateTime.Now);
             return _database.Execute(commandText, parameters);
         }
 
@@ -268,11 +296,22 @@ namespace AspNet.Identity.SQLite
         }
 
 
-        public int IncreaseCountRequest(string email)
+        //public int CountRequest(string id_user)
+        //{
+        //    string commandText = @"SELECT COUNT(Id) FROM UserRequests WHERE User_Id = @id_user";
+        //    Dictionary<string, object> parameters = new Dictionary<string, object>(); ;
+        //    parameters.Add("@Id", id_user);
+        //    return _database.Execute(commandText, parameters);
+        //}
+
+        public int IncreaseCountRequest(string name, string userId)
         {
-            string commandText = @"Update AspNetUsers set CountRequest=CountRequest + 1 WHERE Email = @email";
-            Dictionary<string, object> parameters = new Dictionary<string, object>();;
-            parameters.Add("@email", email);
+            string commandText = @"Insert into UserRequests(Name, UserId,DateTimeRequest)
+            values(@name,@userId,@dataTimelogin)";
+            Dictionary<string, object> parameters = new Dictionary<string, object>(); ;
+            parameters.Add("@name", name);
+            parameters.Add("@userId", userId);
+            parameters.Add("@dataTimelogin", DateTime.Now);
             return _database.Execute(commandText, parameters);
         }
         /// <summary>
@@ -308,8 +347,7 @@ namespace AspNet.Identity.SQLite
         {
             string commandText = @"Update AspNetUsers set UserName = @userName, PasswordHash = @pswHash, SecurityStamp = @secStamp, 
                 Email=@email, EmailConfirmed=@emailconfirmed, PhoneNumber=@phonenumber, PhoneNumberConfirmed=@phonenumberconfirmed,
-                AccessFailedCount=@accesscount, LockoutEnabled=@lockoutenabled, LockoutEndDateUtc=@lockoutenddate, TwoFactorEnabled=@twofactorenabled , 
-                CountRequest=@countrequest, DateLastLogin=@datelastlogin, AverageIntervalBetweenRequest=@averageintervalbetweenrequest
+                AccessFailedCount=@accesscount, LockoutEnabled=@lockoutenabled, LockoutEndDateUtc=@lockoutenddate, TwoFactorEnabled=@twofactorenabled, DateLastLogin=@datelastlogin
                 WHERE Id = @userId";
             Dictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("@userName", user.UserName);
@@ -324,10 +362,7 @@ namespace AspNet.Identity.SQLite
             parameters.Add("@lockoutenabled", user.LockoutEnabled);
             parameters.Add("@lockoutenddate", user.LockoutEndDateUtc);
             parameters.Add("@twofactorenabled", user.TwoFactorEnabled);
-            parameters.Add("@countrequest", user.CountRequest);
             parameters.Add("@datelastlogin", user.DateLastLogin);
-            parameters.Add("@averageintervalbetweenrequest", user.AverageIntervalBetweenRequest);
-
             return _database.Execute(commandText, parameters);
         }
     }

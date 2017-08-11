@@ -87,10 +87,13 @@ namespace AspNet.Identity.SQLite
         /// </summary>
         public virtual int AccessFailedCount { get; set; }
 
-        public virtual int CountRequest { get; set; }
-
-        public virtual string AverageIntervalBetweenRequest { get; set; }
+        public virtual int CountRequests { get; set; }
 
         public virtual DateTime? DateLastLogin{ get; set; }
     }
 }
+
+
+//public virtual int CountRequest { get; set; }
+
+//public virtual string AverageIntervalBetweenRequest { get; set; }
