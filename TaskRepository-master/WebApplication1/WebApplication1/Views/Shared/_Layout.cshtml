@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-@ViewBag.Title</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/task-index.js"></script>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet" type="text/css" href="~/Content/tooltipster.bundle.min.css" />
+    @*<link rel="stylesheet" type="text/css" href="~/Content/tooltipster.bundle.min.css" />*@
     @*<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>*@
-    <script type="text/javascript" src="~/Scripts/tooltipster.bundle.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.tooltip').tooltipster();
-        });
-    </script>
+    @*<script type="text/javascript" src="~/Scripts/tooltipster.bundle.min.js"></script>*@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">

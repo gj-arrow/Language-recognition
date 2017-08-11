@@ -29,7 +29,7 @@
 
 .left-col {
     resize:none;
-    height:340px;
+    height:513px;
 }
 
 .lbl-sgn-in {
@@ -112,4 +112,16 @@ span.tooltip {
 div.editable {
     border: 1px solid #ccc;
     padding: 5px;
+    overflow: auto;
 }
+
+
+.editable[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+.editable[placeholder]:empty:focus:before {
+    content: "";
+}
+

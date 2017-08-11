@@ -15,10 +15,18 @@ namespace WebApplication1.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            List<TopUser> topUsers = topRequests();
+            return View(topUsers);
         }
 
         public PartialViewResult GetTopUsers()
+        {
+            List<TopUser> topUsers = topRequests();
+            return PartialView("_TopUsers",topUsers);
+        }
+
+
+        private List<TopUser> topRequests()
         {
             IEnumerable<IdentityUser> users = userTable.GetTopUsers();
             List<TopUser> topUsers = new List<TopUser>();
@@ -31,7 +39,7 @@ namespace WebApplication1.Controllers
                 topUser.DateLastLogin = user.DateLastLogin;
                 topUsers.Add(topUser);
             }
-            return PartialView("_TopUsers",topUsers);
+            return topUsers;
         }
 
 
