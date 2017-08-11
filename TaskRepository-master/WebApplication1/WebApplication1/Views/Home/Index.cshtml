@@ -245,7 +245,7 @@ $(document).ready(function () {
         $('span').on('mouseover', function (e) {
             $(this).addClass('hlight');
             var text = $(this).text();
-            $.ajax("/Home/Translator?text="+text, {
+            $.ajax("/Home/Translator?word=" + text, {
                 success: function (data) {
                     var str = "";
                     for (var item in data)

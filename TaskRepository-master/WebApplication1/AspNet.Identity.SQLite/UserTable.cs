@@ -70,6 +70,26 @@ namespace AspNet.Identity.SQLite
             return userlist;
         }
 
+        public Dictionary<string, string> GetSavedRequest(string word)
+        {
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+            string commandText = "Select Name, Russian, English, Spanish, Bulgarian, Portuguese  from SavedRequests where Name = @name";
+            Dictionary<string, object> parameters = new Dictionary<string, object>();
+            parameters.Add("@name", word);
+            var rows = _database.Query(commandText, parameters);
+            if (rows.Count != 0)
+            {
+                foreach (var row in rows)
+                {
+                    dict["Russian"] = string.IsNullOrEmpty(row["Russian"]) ? null : row["Russian"];
+                    dict["English"] = string.IsNullOrEmpty(row["English"]) ? null : row["English"];
+                    dict["Spanish"] = string.IsNullOrEmpty(row["Spanish"]) ? null : row["Spanish"];
+                    dict["Bulgarian"] = string.IsNullOrEmpty(row["Bulgarian"]) ? null : row["Bulgarian"];
+                    dict["Portuguese"] = string.IsNullOrEmpty(row["Portuguese"]) ? null : row["Portuguese"];
+                }
+            }
+            return dict;
+        }
 
         public TimeSpan GetAverageTimeBetweenRequests(string userId)
         {
@@ -128,8 +148,6 @@ namespace AspNet.Identity.SQLite
                 user.LockoutEnabled = row["LockoutEnabled"] == "1" ? true : false;
                 user.LockoutEndDateUtc = string.IsNullOrEmpty(row["LockoutEndDateUtc"]) ? DateTime.Now : DateTime.Parse(row["LockoutEndDateUtc"]);
                 user.AccessFailedCount = string.IsNullOrEmpty(row["AccessFailedCount"]) ? 0 : int.Parse(row["AccessFailedCount"]);
-                //user.CountRequest = string.IsNullOrEmpty(row["CountRequest"]) ? 0 : int.Parse(row["CountRequest"]);
-                //user.AverageIntervalBetweenRequest = string.IsNullOrEmpty(row["AverageIntervalBetweenRequest"]) ? null :(row["AverageIntervalBetweenRequest"]);
                 user.DateLastLogin = string.IsNullOrEmpty(row["DateLastLogin"]) ? DateTime.Now : DateTime.Parse(row["DateLastLogin"]);
                 userlist.Add(user);
             }
@@ -295,14 +313,19 @@ namespace AspNet.Identity.SQLite
             return _database.Execute(commandText, parameters);
         }
 
-
-        //public int CountRequest(string id_user)
-        //{
-        //    string commandText = @"SELECT COUNT(Id) FROM UserRequests WHERE User_Id = @id_user";
-        //    Dictionary<string, object> parameters = new Dictionary<string, object>(); ;
-        //    parameters.Add("@Id", id_user);
-        //    return _database.Execute(commandText, parameters);
-        //}
+        public int SaveRequest(Dictionary<string,string> dict, string word)
+        {
+            string commandText = @"Insert into SavedRequests(Name, Russian, English, Spanish, Bulgarian, Portuguese)
+            values(@name, @russian, @english, @spanish, @bulgarian, @portuguese)";
+            Dictionary<string, object> parameters = new Dictionary<string, object>(); ;
+            parameters.Add("@name", word);
+            parameters.Add("@russian", dict["Russian"]);
+            parameters.Add("@english", dict["English"]);
+            parameters.Add("@spanish", dict["Spanish"]);
+            parameters.Add("@bulgarian", dict["Bulgarian"]);
+            parameters.Add("@portuguese", dict["Portuguese"]);
+            return _database.Execute(commandText, parameters);
+        }
 
         public int IncreaseCountRequest(string name, string userId)
         {

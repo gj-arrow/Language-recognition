@@ -36,36 +36,41 @@ namespace WebApplication1.Controllers
 
 
         [HttpGet]
-        public JsonResult Translator(string text)
+        public JsonResult Translator(string word)
         {
-            userTable.IncreaseCountRequest(text, User.Identity.GetUserId());
+            userTable.IncreaseCountRequest(word, User.Identity.GetUserId());
             Dictionary<string, string> lang = new Dictionary<string, string> { { "rus", "Russian" }, { "eng", "English" }, { "spa", "Spanish" }, { "bul", "Bulgarian" }, { "por", "Portuguese" } };
-            Dictionary<string, string> dict = new Dictionary<string, string>();
-            string apikey = "f9bf8b17393cda27b043da452c0d002e";
-            CAPI LanguageCAPI = new CAPI(apikey);
-            LanguageCAPI.SetCustomHeaders("X-RosetteAPI-App", "csharp-app");
-            LanguageIdentificationResponse response = LanguageCAPI.Language(text);
-            decimal? temp= 0;
-            foreach (var langItem in response.LanguageDetections)
+            Dictionary<string, string> dict;
+            dict = userTable.GetSavedRequest(word);
+            if (dict.Count == 0)
             {
-                if (lang.ContainsKey(langItem.Language))
-                temp += langItem.Confidence;
-            }
-            foreach (var langItem in response.LanguageDetections)
-            {
-                foreach (var item in lang)
+                string apikey = "f9bf8b17393cda27b043da452c0d002e";
+                CAPI LanguageCAPI = new CAPI(apikey);
+                LanguageCAPI.SetCustomHeaders("X-RosetteAPI-App", "csharp-app");
+                LanguageIdentificationResponse response = LanguageCAPI.Language(word);
+                decimal? temp = 0;
+                foreach (var langItem in response.LanguageDetections)
                 {
-                    if (langItem.Language.Equals(item.Key))
+                    if (lang.ContainsKey(langItem.Language))
+                        temp += langItem.Confidence;
+                }
+                foreach (var langItem in response.LanguageDetections)
+                {
+                    foreach (var item in lang)
                     {
-                        if(!dict.ContainsKey(item.Value))
-                        dict.Add(item.Value, String.Format("{0:0.##}%", langItem.Confidence*100/temp));
-                        else dict[item.Value] = String.Format("{0:0.##}%", langItem.Confidence * 100 / temp);
-                    }
-                    else if (!dict.ContainsKey(item.Value))
-                    {
-                        dict.Add(item.Value, "0%");
+                        if (langItem.Language.Equals(item.Key))
+                        {
+                            if (!dict.ContainsKey(item.Value))
+                                dict.Add(item.Value, String.Format("{0:0.##}%", langItem.Confidence * 100 / temp));
+                            else dict[item.Value] = String.Format("{0:0.##}%", langItem.Confidence * 100 / temp);
+                        }
+                        else if (!dict.ContainsKey(item.Value))
+                        {
+                            dict.Add(item.Value, "0%");
+                        }
                     }
                 }
+                userTable.SaveRequest(dict, word);
             }
             return Json(dict, JsonRequestBehavior.AllowGet);
         }
