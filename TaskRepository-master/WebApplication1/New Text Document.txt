@@ -22,3 +22,4 @@ https://developer.rosette.com/
 
 ne smotrel
 https://languagelayer.com/documentation#python
+https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/

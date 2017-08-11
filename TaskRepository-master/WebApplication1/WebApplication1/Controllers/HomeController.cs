@@ -45,21 +45,26 @@ namespace WebApplication1.Controllers
             CAPI LanguageCAPI = new CAPI(apikey);
             LanguageCAPI.SetCustomHeaders("X-RosetteAPI-App", "csharp-app");
             LanguageIdentificationResponse response = LanguageCAPI.Language(text);
-            foreach(var langItem in response.LanguageDetections)
+            decimal? temp= 0;
+            foreach (var langItem in response.LanguageDetections)
+            {
+                if (lang.ContainsKey(langItem.Language))
+                temp += langItem.Confidence;
+            }
+            foreach (var langItem in response.LanguageDetections)
             {
                 foreach (var item in lang)
                 {
                     if (langItem.Language.Equals(item.Key))
                     {
-                        dict.Add(item.Value, String.Format("{0:0.##}%", langItem.Confidence*100));
+                        if(!dict.ContainsKey(item.Value))
+                        dict.Add(item.Value, String.Format("{0:0.##}%", langItem.Confidence*100/temp));
+                        else dict[item.Value] = String.Format("{0:0.##}%", langItem.Confidence * 100 / temp);
                     }
-                }
-            }
-            foreach (var item in lang)
-            {
-                if (!dict.ContainsKey(item.Value))
-                {
-                    dict.Add(item.Value, "0%");
+                    else if (!dict.ContainsKey(item.Value))
+                    {
+                        dict.Add(item.Value, "0%");
+                    }
                 }
             }
             return Json(dict, JsonRequestBehavior.AllowGet);
@@ -76,7 +81,6 @@ namespace WebApplication1.Controllers
             LanguageIdentificationResponse response = LanguageCAPI.Language(text);
             return Json(response, JsonRequestBehavior.AllowGet);
         }
-
     }
 }
 
