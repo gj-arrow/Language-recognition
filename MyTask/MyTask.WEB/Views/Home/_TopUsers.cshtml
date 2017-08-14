@@ -1,0 +1,27 @@
+﻿@model IEnumerable<MyTask.Models.TopUserViewModel>
+
+<div class="col-md-7 panel panel-default right-col">
+    <h3 style="color:black" class=td-center>Top 10 Requests</h3>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr class="top_label">
+                    <th colspan="2">User</th>
+                    <th colspan="2">Last Login</th>
+                    <th colspan="2">Average Interval Requests</th>
+                    <th colspan="1">Amount Request</th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td colspan="2">@item.UserName</td>
+                    <td colspan="2">@item.DateLastLogin</td>
+                    <td colspan="2" class="td-center">@item.AverageIntervalBetweenRequest</td>
+                    <td colspan="1" class="td-center">@item.CountRequests</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+

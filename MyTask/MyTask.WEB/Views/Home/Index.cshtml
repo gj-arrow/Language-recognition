@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="center">
+    @if (TempData["success"] != null)
+    {
+        <p class="alert alert-success" id="successMessage">@TempData["success"]</p>
+    }
+</div>
+<div class="row marg-top">
+    <button class="sbmt btn btn-default">Submit</button>
+    </div>
+<div class="row">
+    <div class="col-md-5 panel-body">
+        <div id="input" contenteditable='true' class="editable col left-col" placeholder="Enter words here...">
+        </div>
+    </div>
+    <div id="topUsers">
+        @Html.Action("GetTopUsers", "Home")
+    </div>
+</div>
+<div id="popup" class="messagepop pop">
+    <ul id="output"></ul>
+</div>
