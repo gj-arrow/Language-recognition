@@ -1,0 +1,332 @@
+D:\Task\New folder\Work\Work.WEB\bin\ApplicationInsights.config
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\csc.exe
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\System.Collections.Immutable.dll
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\vbc.exe
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe
+D:\Task\New folder\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe.config
+D:\Task\New folder\Work\Work.WEB\bin\Newtonsoft.Json.dll
+D:\Task\New folder\Work\Work.WEB\bin\Work.WEB.dll.config
+D:\Task\New folder\Work\Work.WEB\bin\Work.WEB.dll
+D:\Task\New folder\Work\Work.WEB\bin\Work.WEB.pdb
+D:\Task\New folder\Work\Work.WEB\bin\Antlr3.Runtime.dll
+D:\Task\New folder\Work\Work.WEB\bin\AutoMapper.dll
+D:\Task\New folder\Work\Work.WEB\bin\EntityFramework.dll
+D:\Task\New folder\Work\Work.WEB\bin\EntityFramework.SqlServer.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.Web.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.ApplicationInsights.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Security.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Web.Infrastructure.dll
+D:\Task\New folder\Work\Work.WEB\bin\Owin.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Helpers.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Mvc.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Optimization.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Razor.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.WebPages.Deployment.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.WebPages.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.WebPages.Razor.dll
+D:\Task\New folder\Work\Work.WEB\bin\WebGrease.dll
+D:\Task\New folder\Work\Work.WEB\bin\Work.BLL.dll
+D:\Task\New folder\Work\Work.WEB\bin\Work.DAL.dll
+D:\Task\New folder\Work\Work.WEB\bin\rosette_api.dll
+D:\Task\New folder\Work\Work.WEB\bin\System.Data.SQLite.dll
+D:\Task\New folder\Work\Work.WEB\bin\Work.BLL.pdb
+D:\Task\New folder\Work\Work.WEB\bin\AutoMapper.xml
+D:\Task\New folder\Work\Work.WEB\bin\EntityFramework.xml
+D:\Task\New folder\Work\Work.WEB\bin\EntityFramework.SqlServer.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.Web.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.ApplicationInsights.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Security.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Task\New folder\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Task\New folder\Work\Work.WEB\bin\Newtonsoft.Json.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Helpers.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Mvc.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Optimization.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.Razor.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.WebPages.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.WebPages.Deployment.xml
+D:\Task\New folder\Work\Work.WEB\bin\System.Web.WebPages.Razor.xml
+D:\Task\New folder\Work\Work.WEB\bin\Antlr3.Runtime.pdb
+D:\Task\New folder\Work\Work.WEB\bin\Work.DAL.pdb
+D:\Task\New folder\Work\Work.WEB\bin\System.Data.SQLite.xml
+D:\Task\New folder\Work\Work.WEB\obj\Debug\Work.WEB.csprojResolveAssemblyReference.cache
+D:\Task\New folder\Work\Work.WEB\obj\Debug\Work.WEB.dll
+D:\Task\New folder\Work\Work.WEB\obj\Debug\Work.WEB.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\ApplicationInsights.config
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\csc.exe
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\System.Collections.Immutable.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\vbc.exe
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe.config
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Newtonsoft.Json.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.WEB.dll.config
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.WEB.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.WEB.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Antlr3.Runtime.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\AutoMapper.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\EntityFramework.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\EntityFramework.SqlServer.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.Web.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.ApplicationInsights.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Security.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Web.Infrastructure.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Owin.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Helpers.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Mvc.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Optimization.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Razor.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.WebPages.Deployment.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.WebPages.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.WebPages.Razor.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\WebGrease.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.BLL.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.DAL.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\rosette_api.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Data.SQLite.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.BLL.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\AutoMapper.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\EntityFramework.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\EntityFramework.SqlServer.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.Web.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.ApplicationInsights.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Security.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Newtonsoft.Json.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Helpers.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Mvc.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Optimization.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.Razor.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.WebPages.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.WebPages.Deployment.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Web.WebPages.Razor.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Antlr3.Runtime.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\Work.DAL.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\bin\System.Data.SQLite.xml
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\obj\Debug\Work.WEB.csprojResolveAssemblyReference.cache
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\obj\Debug\Work.WEB.dll
+D:\Student\OmegaSoftWare\last\Work\Work.WEB\obj\Debug\Work.WEB.pdb
+D:\Task\New folder\home\Work\Work.WEB\bin\ApplicationInsights.config
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\csc.exe
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\System.Collections.Immutable.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\vbc.exe
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe
+D:\Task\New folder\home\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe.config
+D:\Task\New folder\home\Work\Work.WEB\bin\Newtonsoft.Json.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.WEB.dll.config
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.WEB.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.WEB.pdb
+D:\Task\New folder\home\Work\Work.WEB\bin\Antlr3.Runtime.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\AutoMapper.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\EntityFramework.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\EntityFramework.SqlServer.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.Web.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.ApplicationInsights.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Security.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Web.Infrastructure.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Owin.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Helpers.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Mvc.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Optimization.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Razor.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.WebPages.Deployment.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.WebPages.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.WebPages.Razor.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\WebGrease.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.BLL.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.DAL.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\rosette_api.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Data.SQLite.dll
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.BLL.pdb
+D:\Task\New folder\home\Work\Work.WEB\bin\AutoMapper.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\EntityFramework.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\EntityFramework.SqlServer.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.Web.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.ApplicationInsights.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Security.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Newtonsoft.Json.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Helpers.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Mvc.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Optimization.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.Razor.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.WebPages.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.WebPages.Deployment.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Web.WebPages.Razor.xml
+D:\Task\New folder\home\Work\Work.WEB\bin\Antlr3.Runtime.pdb
+D:\Task\New folder\home\Work\Work.WEB\bin\Work.DAL.pdb
+D:\Task\New folder\home\Work\Work.WEB\bin\System.Data.SQLite.xml
+D:\Task\New folder\home\Work\Work.WEB\obj\Debug\Work.WEB.csprojResolveAssemblyReference.cache
+D:\Task\New folder\home\Work\Work.WEB\obj\Debug\Work.WEB.dll
+D:\Task\New folder\home\Work\Work.WEB\obj\Debug\Work.WEB.pdb
+D:\Task\New folder\reg\Work\Work.WEB\bin\ApplicationInsights.config
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\csc.exe
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\System.Collections.Immutable.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\System.Reflection.Metadata.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\vbc.exe
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe
+D:\Task\New folder\reg\Work\Work.WEB\bin\roslyn\VBCSCompiler.exe.config
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.WEB.dll.config
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.WEB.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.WEB.pdb
+D:\Task\New folder\reg\Work\Work.WEB\bin\Antlr3.Runtime.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\AutoMapper.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\EntityFramework.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\EntityFramework.SqlServer.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.Web.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.ApplicationInsights.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Security.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Web.Infrastructure.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Newtonsoft.Json.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Owin.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Helpers.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Mvc.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Optimization.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Razor.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.WebPages.Deployment.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.WebPages.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.WebPages.Razor.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\WebGrease.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.BLL.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.DAL.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\rosette_api.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Data.SQLite.dll
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.BLL.pdb
+D:\Task\New folder\reg\Work\Work.WEB\bin\AutoMapper.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\EntityFramework.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\EntityFramework.SqlServer.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.DependencyCollector.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.Web.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AI.WindowsServer.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.ApplicationInsights.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Security.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Newtonsoft.Json.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Helpers.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Mvc.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Optimization.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.Razor.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.WebPages.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.WebPages.Deployment.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Web.WebPages.Razor.xml
+D:\Task\New folder\reg\Work\Work.WEB\bin\Antlr3.Runtime.pdb
+D:\Task\New folder\reg\Work\Work.WEB\bin\Work.DAL.pdb
+D:\Task\New folder\reg\Work\Work.WEB\bin\System.Data.SQLite.xml
+D:\Task\New folder\reg\Work\Work.WEB\obj\Debug\Work.WEB.csprojResolveAssemblyReference.cache
+D:\Task\New folder\reg\Work\Work.WEB\obj\Debug\Work.WEB.dll
+D:\Task\New folder\reg\Work\Work.WEB\obj\Debug\Work.WEB.pdb

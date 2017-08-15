@@ -1,0 +1,72 @@
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Work.DAL.dll.config
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Work.DAL.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Work.DAL.pdb
+D:\Task\New folder\Work\Work.DAL\bin\Debug\EntityFramework.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\System.Data.SQLite.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Task\New folder\Work\Work.DAL\bin\Debug\EntityFramework.xml
+D:\Task\New folder\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Task\New folder\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Task\New folder\Work\Work.DAL\bin\Debug\System.Data.SQLite.xml
+D:\Task\New folder\Work\Work.DAL\obj\Debug\Work.DAL.csprojResolveAssemblyReference.cache
+D:\Task\New folder\Work\Work.DAL\obj\Debug\Work.DAL.dll
+D:\Task\New folder\Work\Work.DAL\obj\Debug\Work.DAL.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Work.DAL.dll.config
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Work.DAL.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Work.DAL.pdb
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\EntityFramework.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\System.Data.SQLite.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\EntityFramework.xml
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\bin\Debug\System.Data.SQLite.xml
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\obj\Debug\Work.DAL.csprojResolveAssemblyReference.cache
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\obj\Debug\Work.DAL.dll
+D:\Student\OmegaSoftWare\last\Work\Work.DAL\obj\Debug\Work.DAL.pdb
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Work.DAL.dll.config
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Work.DAL.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Work.DAL.pdb
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\EntityFramework.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\System.Data.SQLite.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\EntityFramework.xml
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Task\New folder\home\Work\Work.DAL\bin\Debug\System.Data.SQLite.xml
+D:\Task\New folder\home\Work\Work.DAL\obj\Debug\Work.DAL.csprojResolveAssemblyReference.cache
+D:\Task\New folder\home\Work\Work.DAL\obj\Debug\Work.DAL.dll
+D:\Task\New folder\home\Work\Work.DAL\obj\Debug\Work.DAL.pdb
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Work.DAL.dll.config
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Work.DAL.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Work.DAL.pdb
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\EntityFramework.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\System.Data.SQLite.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\EntityFramework.xml
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Task\New folder\reg\Work\Work.DAL\bin\Debug\System.Data.SQLite.xml
+D:\Task\New folder\reg\Work\Work.DAL\obj\Debug\Work.DAL.csprojResolveAssemblyReference.cache
+D:\Task\New folder\reg\Work\Work.DAL\obj\Debug\Work.DAL.dll
+D:\Task\New folder\reg\Work\Work.DAL\obj\Debug\Work.DAL.pdb
