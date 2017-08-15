@@ -1,0 +1,1403 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNet.Identity.SQLite.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimIdentityRole">
+            <summary>Shim type of AspNet.Identity.SQLite.IdentityRole</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.#ctor(AspNet.Identity.SQLite.IdentityRole)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.AllInstances.IdGet">
+            <summary>Sets the shim of IdentityRole.get_Id()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.AllInstances.IdSetString">
+            <summary>Sets the shim of IdentityRole.set_Id(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.AllInstances.NameGet">
+            <summary>Sets the shim of IdentityRole.get_Name()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.AllInstances.NameSetString">
+            <summary>Sets the shim of IdentityRole.set_Name(String value)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.Bind(Microsoft.AspNet.Identity.IRole)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.Bind(Microsoft.AspNet.Identity.IRole{System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.Constructor">
+            <summary>Sets the shim of IdentityRole.IdentityRole()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.ConstructorString">
+            <summary>Sets the shim of IdentityRole.IdentityRole(String name)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.ConstructorStringString">
+            <summary>Sets the shim of IdentityRole.IdentityRole(String name, String id)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.IdGet">
+            <summary>Sets the shim of IdentityRole.get_Id()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.IdSetString">
+            <summary>Sets the shim of IdentityRole.set_Id(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.NameGet">
+            <summary>Sets the shim of IdentityRole.get_Name()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityRole.NameSetString">
+            <summary>Sets the shim of IdentityRole.set_Name(String value)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimIdentityUser">
+            <summary>Shim type of AspNet.Identity.SQLite.IdentityUser</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.#ctor(AspNet.Identity.SQLite.IdentityUser)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AccessFailedCountGet">
+            <summary>Sets the shim of IdentityUser.get_AccessFailedCount()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AccessFailedCountSetInt32">
+            <summary>Sets the shim of IdentityUser.set_AccessFailedCount(Int32 value)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.AccessFailedCountGet">
+            <summary>Sets the shim of IdentityUser.get_AccessFailedCount()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.AccessFailedCountSetInt32">
+            <summary>Sets the shim of IdentityUser.set_AccessFailedCount(Int32 value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.EmailConfirmedGet">
+            <summary>Sets the shim of IdentityUser.get_EmailConfirmed()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.EmailConfirmedSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_EmailConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.EmailGet">
+            <summary>Sets the shim of IdentityUser.get_Email()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.EmailSetString">
+            <summary>Sets the shim of IdentityUser.set_Email(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.IdGet">
+            <summary>Sets the shim of IdentityUser.get_Id()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.IdSetString">
+            <summary>Sets the shim of IdentityUser.set_Id(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.LockoutEnabledGet">
+            <summary>Sets the shim of IdentityUser.get_LockoutEnabled()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.LockoutEnabledSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_LockoutEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.LockoutEndDateUtcGet">
+            <summary>Sets the shim of IdentityUser.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.LockoutEndDateUtcSetNullableOfDateTime">
+            <summary>Sets the shim of IdentityUser.set_LockoutEndDateUtc(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.PasswordHashGet">
+            <summary>Sets the shim of IdentityUser.get_PasswordHash()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.PasswordHashSetString">
+            <summary>Sets the shim of IdentityUser.set_PasswordHash(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.PhoneNumberConfirmedGet">
+            <summary>Sets the shim of IdentityUser.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.PhoneNumberConfirmedSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_PhoneNumberConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.PhoneNumberGet">
+            <summary>Sets the shim of IdentityUser.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.PhoneNumberSetString">
+            <summary>Sets the shim of IdentityUser.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.SecurityStampGet">
+            <summary>Sets the shim of IdentityUser.get_SecurityStamp()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.SecurityStampSetString">
+            <summary>Sets the shim of IdentityUser.set_SecurityStamp(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.TwoFactorEnabledGet">
+            <summary>Sets the shim of IdentityUser.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.TwoFactorEnabledSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_TwoFactorEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.UserNameGet">
+            <summary>Sets the shim of IdentityUser.get_UserName()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.AllInstances.UserNameSetString">
+            <summary>Sets the shim of IdentityUser.set_UserName(String value)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.Bind(Microsoft.AspNet.Identity.IUser)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.Bind(Microsoft.AspNet.Identity.IUser{System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.Constructor">
+            <summary>Sets the shim of IdentityUser.IdentityUser()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.ConstructorString">
+            <summary>Sets the shim of IdentityUser.IdentityUser(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.EmailConfirmedGet">
+            <summary>Sets the shim of IdentityUser.get_EmailConfirmed()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.EmailConfirmedSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_EmailConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.EmailGet">
+            <summary>Sets the shim of IdentityUser.get_Email()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.EmailSetString">
+            <summary>Sets the shim of IdentityUser.set_Email(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.IdGet">
+            <summary>Sets the shim of IdentityUser.get_Id()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.IdSetString">
+            <summary>Sets the shim of IdentityUser.set_Id(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.LockoutEnabledGet">
+            <summary>Sets the shim of IdentityUser.get_LockoutEnabled()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.LockoutEnabledSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_LockoutEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.LockoutEndDateUtcGet">
+            <summary>Sets the shim of IdentityUser.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.LockoutEndDateUtcSetNullableOfDateTime">
+            <summary>Sets the shim of IdentityUser.set_LockoutEndDateUtc(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.PasswordHashGet">
+            <summary>Sets the shim of IdentityUser.get_PasswordHash()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.PasswordHashSetString">
+            <summary>Sets the shim of IdentityUser.set_PasswordHash(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.PhoneNumberConfirmedGet">
+            <summary>Sets the shim of IdentityUser.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.PhoneNumberConfirmedSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_PhoneNumberConfirmed(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.PhoneNumberGet">
+            <summary>Sets the shim of IdentityUser.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.PhoneNumberSetString">
+            <summary>Sets the shim of IdentityUser.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.SecurityStampGet">
+            <summary>Sets the shim of IdentityUser.get_SecurityStamp()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.SecurityStampSetString">
+            <summary>Sets the shim of IdentityUser.set_SecurityStamp(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.TwoFactorEnabledGet">
+            <summary>Sets the shim of IdentityUser.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.TwoFactorEnabledSetBoolean">
+            <summary>Sets the shim of IdentityUser.set_TwoFactorEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.UserNameGet">
+            <summary>Sets the shim of IdentityUser.get_UserName()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimIdentityUser.UserNameSetString">
+            <summary>Sets the shim of IdentityUser.set_UserName(String value)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1">
+            <summary>Shim type of AspNet.Identity.SQLite.RoleStore`1</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.#ctor(AspNet.Identity.SQLite.RoleStore{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.CreateAsyncT0">
+            <summary>Sets the shim of RoleStore`1.CreateAsync(!0 role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.DatabaseGet">
+            <summary>Sets the shim of RoleStore`1.get_Database()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.DatabaseSetSQLiteDatabase">
+            <summary>Sets the shim of RoleStore`1.set_Database(SQLiteDatabase value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.DeleteAsyncT0">
+            <summary>Sets the shim of RoleStore`1.DeleteAsync(!0 role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.Dispose">
+            <summary>Sets the shim of RoleStore`1.Dispose()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.FindByIdAsyncString">
+            <summary>Sets the shim of RoleStore`1.FindByIdAsync(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.FindByNameAsyncString">
+            <summary>Sets the shim of RoleStore`1.FindByNameAsync(String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.RolesGet">
+            <summary>Sets the shim of RoleStore`1.get_Roles()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.AllInstances.UpdateAsyncT0">
+            <summary>Sets the shim of RoleStore`1.UpdateAsync(!0 role)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Bind(Microsoft.AspNet.Identity.IQueryableRoleStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Bind(Microsoft.AspNet.Identity.IQueryableRoleStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Bind(Microsoft.AspNet.Identity.IRoleStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Constructor">
+            <summary>Sets the shim of RoleStore`1.RoleStore`1()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of RoleStore`1.RoleStore`1(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.CreateAsyncT0">
+            <summary>Sets the shim of RoleStore`1.CreateAsync(!0 role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.DatabaseGet">
+            <summary>Sets the shim of RoleStore`1.get_Database()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.DatabaseSetSQLiteDatabase">
+            <summary>Sets the shim of RoleStore`1.set_Database(SQLiteDatabase value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.DeleteAsyncT0">
+            <summary>Sets the shim of RoleStore`1.DeleteAsync(!0 role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.Dispose">
+            <summary>Sets the shim of RoleStore`1.Dispose()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.FindByIdAsyncString">
+            <summary>Sets the shim of RoleStore`1.FindByIdAsync(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.FindByNameAsyncString">
+            <summary>Sets the shim of RoleStore`1.FindByNameAsync(String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.RolesGet">
+            <summary>Sets the shim of RoleStore`1.get_Roles()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleStore`1.UpdateAsyncT0">
+            <summary>Sets the shim of RoleStore`1.UpdateAsync(!0 role)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1">
+            <summary>Shim type of AspNet.Identity.SQLite.RoleTable`1</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.#ctor(AspNet.Identity.SQLite.RoleTable{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.DeleteString">
+            <summary>Sets the shim of RoleTable`1.Delete(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.GetRoleByIdString">
+            <summary>Sets the shim of RoleTable`1.GetRoleById(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.GetRoleByNameString">
+            <summary>Sets the shim of RoleTable`1.GetRoleByName(String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.GetRoleIdString">
+            <summary>Sets the shim of RoleTable`1.GetRoleId(String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.GetRoleNameString">
+            <summary>Sets the shim of RoleTable`1.GetRoleName(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.GetRoles">
+            <summary>Sets the shim of RoleTable`1.GetRoles()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.InsertIdentityRole">
+            <summary>Sets the shim of RoleTable`1.Insert(IdentityRole role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.AllInstances.UpdateIdentityRole">
+            <summary>Sets the shim of RoleTable`1.Update(IdentityRole role)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of RoleTable`1.RoleTable`1(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.DeleteString">
+            <summary>Sets the shim of RoleTable`1.Delete(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.GetRoleByIdString">
+            <summary>Sets the shim of RoleTable`1.GetRoleById(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.GetRoleByNameString">
+            <summary>Sets the shim of RoleTable`1.GetRoleByName(String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.GetRoleIdString">
+            <summary>Sets the shim of RoleTable`1.GetRoleId(String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.GetRoleNameString">
+            <summary>Sets the shim of RoleTable`1.GetRoleName(String roleId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.GetRoles">
+            <summary>Sets the shim of RoleTable`1.GetRoles()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.InsertIdentityRole">
+            <summary>Sets the shim of RoleTable`1.Insert(IdentityRole role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimRoleTable`1.UpdateIdentityRole">
+            <summary>Sets the shim of RoleTable`1.Update(IdentityRole role)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase">
+            <summary>Shim type of AspNet.Identity.SQLite.SQLiteDatabase</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AddParametersSQLiteCommandDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.AddParameters(SQLiteCommand command, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.CreateCommandStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.CreateCommand(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.Dispose">
+            <summary>Sets the shim of SQLiteDatabase.Dispose()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.EnsureConnectionClosed">
+            <summary>Sets the shim of SQLiteDatabase.EnsureConnectionClosed()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.EnsureConnectionOpen">
+            <summary>Sets the shim of SQLiteDatabase.EnsureConnectionOpen()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.ExecuteStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.Execute(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.GetStrValueStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.GetStrValue(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.QueryStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.Query(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.AllInstances.QueryValueStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.QueryValue(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.Constructor">
+            <summary>Sets the shim of SQLiteDatabase.SQLiteDatabase()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.ConstructorString">
+            <summary>Sets the shim of SQLiteDatabase.SQLiteDatabase(String connectionStringName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.CreateCommandStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.CreateCommand(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.Dispose">
+            <summary>Sets the shim of SQLiteDatabase.Dispose()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.EnsureConnectionClosed">
+            <summary>Sets the shim of SQLiteDatabase.EnsureConnectionClosed()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.EnsureConnectionOpen">
+            <summary>Sets the shim of SQLiteDatabase.EnsureConnectionOpen()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.ExecuteStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.Execute(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.GetStrValueStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.GetStrValue(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.QueryStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.Query(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimSQLiteDatabase.QueryValueStringDictionaryOfStringObject">
+            <summary>Sets the shim of SQLiteDatabase.QueryValue(String commandText, Dictionary`2&lt;String,Object&gt; parameters)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable">
+            <summary>Shim type of AspNet.Identity.SQLite.UserClaimsTable</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.#ctor(AspNet.Identity.SQLite.UserClaimsTable)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.AllInstances.DeleteIdentityUserClaim">
+            <summary>Sets the shim of UserClaimsTable.Delete(IdentityUser user, Claim claim)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.AllInstances.DeleteString">
+            <summary>Sets the shim of UserClaimsTable.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.AllInstances.FindByUserIdString">
+            <summary>Sets the shim of UserClaimsTable.FindByUserId(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.AllInstances.InsertClaimString">
+            <summary>Sets the shim of UserClaimsTable.Insert(Claim userClaim, String userId)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of UserClaimsTable.UserClaimsTable(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.DeleteIdentityUserClaim">
+            <summary>Sets the shim of UserClaimsTable.Delete(IdentityUser user, Claim claim)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.DeleteString">
+            <summary>Sets the shim of UserClaimsTable.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.FindByUserIdString">
+            <summary>Sets the shim of UserClaimsTable.FindByUserId(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserClaimsTable.InsertClaimString">
+            <summary>Sets the shim of UserClaimsTable.Insert(Claim userClaim, String userId)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable">
+            <summary>Shim type of AspNet.Identity.SQLite.UserLoginsTable</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.#ctor(AspNet.Identity.SQLite.UserLoginsTable)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.AllInstances.DeleteIdentityUserUserLoginInfo">
+            <summary>Sets the shim of UserLoginsTable.Delete(IdentityUser user, UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.AllInstances.DeleteString">
+            <summary>Sets the shim of UserLoginsTable.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.AllInstances.FindByUserIdString">
+            <summary>Sets the shim of UserLoginsTable.FindByUserId(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.AllInstances.FindUserIdByLoginUserLoginInfo">
+            <summary>Sets the shim of UserLoginsTable.FindUserIdByLogin(UserLoginInfo userLogin)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.AllInstances.InsertIdentityUserUserLoginInfo">
+            <summary>Sets the shim of UserLoginsTable.Insert(IdentityUser user, UserLoginInfo login)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of UserLoginsTable.UserLoginsTable(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.DeleteIdentityUserUserLoginInfo">
+            <summary>Sets the shim of UserLoginsTable.Delete(IdentityUser user, UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.DeleteString">
+            <summary>Sets the shim of UserLoginsTable.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.FindByUserIdString">
+            <summary>Sets the shim of UserLoginsTable.FindByUserId(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.FindUserIdByLoginUserLoginInfo">
+            <summary>Sets the shim of UserLoginsTable.FindUserIdByLogin(UserLoginInfo userLogin)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserLoginsTable.InsertIdentityUserUserLoginInfo">
+            <summary>Sets the shim of UserLoginsTable.Insert(IdentityUser user, UserLoginInfo login)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable">
+            <summary>Shim type of AspNet.Identity.SQLite.UserRolesTable</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.#ctor(AspNet.Identity.SQLite.UserRolesTable)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.AllInstances.DeleteString">
+            <summary>Sets the shim of UserRolesTable.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.AllInstances.FindByUserIdString">
+            <summary>Sets the shim of UserRolesTable.FindByUserId(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.AllInstances.InsertIdentityUserString">
+            <summary>Sets the shim of UserRolesTable.Insert(IdentityUser user, String roleId)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of UserRolesTable.UserRolesTable(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.DeleteString">
+            <summary>Sets the shim of UserRolesTable.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.FindByUserIdString">
+            <summary>Sets the shim of UserRolesTable.FindByUserId(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserRolesTable.InsertIdentityUserString">
+            <summary>Sets the shim of UserRolesTable.Insert(IdentityUser user, String roleId)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserStore`2">
+            <summary>Shim type of AspNet.Identity.SQLite.UserStore`2</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.#ctor(AspNet.Identity.SQLite.UserStore{`0,`1})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AddClaimAsyncT0Claim">
+            <summary>Sets the shim of UserStore`2.AddClaimAsync(!0 user, Claim claim)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AddLoginAsyncT0UserLoginInfo">
+            <summary>Sets the shim of UserStore`2.AddLoginAsync(!0 user, UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AddToRoleAsyncT0String">
+            <summary>Sets the shim of UserStore`2.AddToRoleAsync(!0 user, String roleName)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.AddClaimAsyncT0Claim">
+            <summary>Sets the shim of UserStore`2.AddClaimAsync(!0 user, Claim claim)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.AddLoginAsyncT0UserLoginInfo">
+            <summary>Sets the shim of UserStore`2.AddLoginAsync(!0 user, UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.AddToRoleAsyncT0String">
+            <summary>Sets the shim of UserStore`2.AddToRoleAsync(!0 user, String roleName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.CreateAsyncT0">
+            <summary>Sets the shim of UserStore`2.CreateAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.DatabaseGet">
+            <summary>Sets the shim of UserStore`2.get_Database()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.DatabaseSetSQLiteDatabase">
+            <summary>Sets the shim of UserStore`2.set_Database(SQLiteDatabase value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.DeleteAsyncT0">
+            <summary>Sets the shim of UserStore`2.DeleteAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.Dispose">
+            <summary>Sets the shim of UserStore`2.Dispose()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.FindAsyncUserLoginInfo">
+            <summary>Sets the shim of UserStore`2.FindAsync(UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.FindByEmailAsyncString">
+            <summary>Sets the shim of UserStore`2.FindByEmailAsync(String email)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.FindByIdAsyncString">
+            <summary>Sets the shim of UserStore`2.FindByIdAsync(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.FindByNameAsyncString">
+            <summary>Sets the shim of UserStore`2.FindByNameAsync(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetAccessFailedCountAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetAccessFailedCountAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetClaimsAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetClaimsAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetEmailAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetEmailAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetEmailConfirmedAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetEmailConfirmedAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetLockoutEnabledAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetLockoutEnabledAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetLockoutEndDateAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetLockoutEndDateAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetLoginsAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetLoginsAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetPasswordHashAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetPasswordHashAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetPhoneNumberAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetPhoneNumberAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetPhoneNumberConfirmedAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetPhoneNumberConfirmedAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetRolesAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetRolesAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetSecurityStampAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetSecurityStampAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.GetTwoFactorEnabledAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetTwoFactorEnabledAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.HasPasswordAsyncT0">
+            <summary>Sets the shim of UserStore`2.HasPasswordAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.IncrementAccessFailedCountAsyncT0">
+            <summary>Sets the shim of UserStore`2.IncrementAccessFailedCountAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.IsInRoleAsyncT0String">
+            <summary>Sets the shim of UserStore`2.IsInRoleAsync(!0 user, String role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.RemoveClaimAsyncT0Claim">
+            <summary>Sets the shim of UserStore`2.RemoveClaimAsync(!0 user, Claim claim)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.RemoveFromRoleAsyncT0String">
+            <summary>Sets the shim of UserStore`2.RemoveFromRoleAsync(!0 user, String role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.RemoveLoginAsyncT0UserLoginInfo">
+            <summary>Sets the shim of UserStore`2.RemoveLoginAsync(!0 user, UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.ResetAccessFailedCountAsyncT0">
+            <summary>Sets the shim of UserStore`2.ResetAccessFailedCountAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetEmailAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetEmailAsync(!0 user, String email)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetEmailConfirmedAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetEmailConfirmedAsync(!0 user, Boolean confirmed)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetLockoutEnabledAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetLockoutEnabledAsync(!0 user, Boolean enabled)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetLockoutEndDateAsyncT0DateTimeOffset">
+            <summary>Sets the shim of UserStore`2.SetLockoutEndDateAsync(!0 user, DateTimeOffset lockoutEnd)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetPasswordHashAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetPasswordHashAsync(!0 user, String passwordHash)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetPhoneNumberAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetPhoneNumberAsync(!0 user, String phoneNumber)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetPhoneNumberConfirmedAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetPhoneNumberConfirmedAsync(!0 user, Boolean confirmed)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetSecurityStampAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetSecurityStampAsync(!0 user, String stamp)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.SetTwoFactorEnabledAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetTwoFactorEnabledAsync(!0 user, Boolean enabled)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.UpdateAsyncT0">
+            <summary>Sets the shim of UserStore`2.UpdateAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.AllInstances.UsersGet">
+            <summary>Sets the shim of UserStore`2.get_Users()</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IQueryableUserStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserClaimStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserEmailStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserLoginStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserPasswordStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserPhoneNumberStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserRoleStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserSecurityStampStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserStore{`0})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IQueryableUserStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserClaimStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserEmailStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserLockoutStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserLoginStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserPasswordStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserPhoneNumberStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserRoleStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserSecurityStampStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(Microsoft.AspNet.Identity.IUserTwoFactorStore{`0,System.String})">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Constructor">
+            <summary>Sets the shim of UserStore`2.UserStore`2()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of UserStore`2.UserStore`2(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.CreateAsyncT0">
+            <summary>Sets the shim of UserStore`2.CreateAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.DatabaseGet">
+            <summary>Sets the shim of UserStore`2.get_Database()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.DatabaseSetSQLiteDatabase">
+            <summary>Sets the shim of UserStore`2.set_Database(SQLiteDatabase value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.DeleteAsyncT0">
+            <summary>Sets the shim of UserStore`2.DeleteAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.Dispose">
+            <summary>Sets the shim of UserStore`2.Dispose()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.FindAsyncUserLoginInfo">
+            <summary>Sets the shim of UserStore`2.FindAsync(UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.FindByEmailAsyncString">
+            <summary>Sets the shim of UserStore`2.FindByEmailAsync(String email)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.FindByIdAsyncString">
+            <summary>Sets the shim of UserStore`2.FindByIdAsync(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.FindByNameAsyncString">
+            <summary>Sets the shim of UserStore`2.FindByNameAsync(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetAccessFailedCountAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetAccessFailedCountAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetClaimsAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetClaimsAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetEmailAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetEmailAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetEmailConfirmedAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetEmailConfirmedAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetLockoutEnabledAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetLockoutEnabledAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetLockoutEndDateAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetLockoutEndDateAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetLoginsAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetLoginsAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetPasswordHashAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetPasswordHashAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetPhoneNumberAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetPhoneNumberAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetPhoneNumberConfirmedAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetPhoneNumberConfirmedAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetRolesAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetRolesAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetSecurityStampAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetSecurityStampAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.GetTwoFactorEnabledAsyncT0">
+            <summary>Sets the shim of UserStore`2.GetTwoFactorEnabledAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.HasPasswordAsyncT0">
+            <summary>Sets the shim of UserStore`2.HasPasswordAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.IncrementAccessFailedCountAsyncT0">
+            <summary>Sets the shim of UserStore`2.IncrementAccessFailedCountAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.IsInRoleAsyncT0String">
+            <summary>Sets the shim of UserStore`2.IsInRoleAsync(!0 user, String role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.RemoveClaimAsyncT0Claim">
+            <summary>Sets the shim of UserStore`2.RemoveClaimAsync(!0 user, Claim claim)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.RemoveFromRoleAsyncT0String">
+            <summary>Sets the shim of UserStore`2.RemoveFromRoleAsync(!0 user, String role)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.RemoveLoginAsyncT0UserLoginInfo">
+            <summary>Sets the shim of UserStore`2.RemoveLoginAsync(!0 user, UserLoginInfo login)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.ResetAccessFailedCountAsyncT0">
+            <summary>Sets the shim of UserStore`2.ResetAccessFailedCountAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetEmailAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetEmailAsync(!0 user, String email)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetEmailConfirmedAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetEmailConfirmedAsync(!0 user, Boolean confirmed)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetLockoutEnabledAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetLockoutEnabledAsync(!0 user, Boolean enabled)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetLockoutEndDateAsyncT0DateTimeOffset">
+            <summary>Sets the shim of UserStore`2.SetLockoutEndDateAsync(!0 user, DateTimeOffset lockoutEnd)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetPasswordHashAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetPasswordHashAsync(!0 user, String passwordHash)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetPhoneNumberAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetPhoneNumberAsync(!0 user, String phoneNumber)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetPhoneNumberConfirmedAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetPhoneNumberConfirmedAsync(!0 user, Boolean confirmed)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetSecurityStampAsyncT0String">
+            <summary>Sets the shim of UserStore`2.SetSecurityStampAsync(!0 user, String stamp)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.SetTwoFactorEnabledAsyncT0Boolean">
+            <summary>Sets the shim of UserStore`2.SetTwoFactorEnabledAsync(!0 user, Boolean enabled)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.UpdateAsyncT0">
+            <summary>Sets the shim of UserStore`2.UpdateAsync(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserStore`2.UsersGet">
+            <summary>Sets the shim of UserStore`2.get_Users()</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserTable`1">
+            <summary>Shim type of AspNet.Identity.SQLite.UserTable`1</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.#ctor(AspNet.Identity.SQLite.UserTable{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.DeleteString">
+            <summary>Sets the shim of UserTable`1.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.DeleteT0">
+            <summary>Sets the shim of UserTable`1.Delete(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetPasswordHashString">
+            <summary>Sets the shim of UserTable`1.GetPasswordHash(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetSecurityStampString">
+            <summary>Sets the shim of UserTable`1.GetSecurityStamp(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetUserByEmailString">
+            <summary>Sets the shim of UserTable`1.GetUserByEmail(String email)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetUserByIdString">
+            <summary>Sets the shim of UserTable`1.GetUserById(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetUserByNameString">
+            <summary>Sets the shim of UserTable`1.GetUserByName(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetUserIdString">
+            <summary>Sets the shim of UserTable`1.GetUserId(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetUserNameString">
+            <summary>Sets the shim of UserTable`1.GetUserName(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.GetUsers">
+            <summary>Sets the shim of UserTable`1.GetUsers()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.InsertT0">
+            <summary>Sets the shim of UserTable`1.Insert(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.SetPasswordHashStringString">
+            <summary>Sets the shim of UserTable`1.SetPasswordHash(String userId, String passwordHash)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.AllInstances.UpdateT0">
+            <summary>Sets the shim of UserTable`1.Update(!0 user)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.ConstructorSQLiteDatabase">
+            <summary>Sets the shim of UserTable`1.UserTable`1(SQLiteDatabase database)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.DeleteString">
+            <summary>Sets the shim of UserTable`1.Delete(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.DeleteT0">
+            <summary>Sets the shim of UserTable`1.Delete(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetPasswordHashString">
+            <summary>Sets the shim of UserTable`1.GetPasswordHash(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetSecurityStampString">
+            <summary>Sets the shim of UserTable`1.GetSecurityStamp(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetUserByEmailString">
+            <summary>Sets the shim of UserTable`1.GetUserByEmail(String email)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetUserByIdString">
+            <summary>Sets the shim of UserTable`1.GetUserById(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetUserByNameString">
+            <summary>Sets the shim of UserTable`1.GetUserByName(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetUserIdString">
+            <summary>Sets the shim of UserTable`1.GetUserId(String userName)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetUserNameString">
+            <summary>Sets the shim of UserTable`1.GetUserName(String userId)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.GetUsers">
+            <summary>Sets the shim of UserTable`1.GetUsers()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.InsertT0">
+            <summary>Sets the shim of UserTable`1.Insert(!0 user)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.SetPasswordHashStringString">
+            <summary>Sets the shim of UserTable`1.SetPasswordHash(String userId, String passwordHash)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.ShimUserTable`1.UpdateT0">
+            <summary>Sets the shim of UserTable`1.Update(!0 user)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubIdentityRole">
+            <summary>Stub type of AspNet.Identity.SQLite.IdentityRole</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityRole.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityRole.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityRole.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityRole.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityRole.InitializeStub">
+            <summary>Initializes a new instance of type StubIdentityRole</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityRole.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityRole.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubIdentityUser">
+            <summary>Stub type of AspNet.Identity.SQLite.IdentityUser</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AccessFailedCount">
+            <summary>Sets the stub of IdentityUser.get_AccessFailedCount()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AccessFailedCountGet">
+            <summary>Sets the stub of IdentityUser.get_AccessFailedCount()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AccessFailedCountSetInt32">
+            <summary>Sets the stub of IdentityUser.set_AccessFailedCount(Int32 value)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToAccessFailedCount">
+            <summary>Attaches delegates to emulate StubIdentityUser.AccessFailedCount as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToEmail">
+            <summary>Attaches delegates to emulate StubIdentityUser.Email as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToEmailConfirmed">
+            <summary>Attaches delegates to emulate StubIdentityUser.EmailConfirmed as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToLockoutEnabled">
+            <summary>Attaches delegates to emulate StubIdentityUser.LockoutEnabled as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToLockoutEndDateUtc">
+            <summary>Attaches delegates to emulate StubIdentityUser.LockoutEndDateUtc as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToPasswordHash">
+            <summary>Attaches delegates to emulate StubIdentityUser.PasswordHash as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToPhoneNumber">
+            <summary>Attaches delegates to emulate StubIdentityUser.PhoneNumber as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToPhoneNumberConfirmed">
+            <summary>Attaches delegates to emulate StubIdentityUser.PhoneNumberConfirmed as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToSecurityStamp">
+            <summary>Attaches delegates to emulate StubIdentityUser.SecurityStamp as a property with a backing field.</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.AttachBackingFieldToTwoFactorEnabled">
+            <summary>Attaches delegates to emulate StubIdentityUser.TwoFactorEnabled as a property with a backing field.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.Email">
+            <summary>Sets the stub of IdentityUser.get_Email()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.EmailConfirmed">
+            <summary>Sets the stub of IdentityUser.get_EmailConfirmed()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.EmailConfirmedGet">
+            <summary>Sets the stub of IdentityUser.get_EmailConfirmed()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.EmailConfirmedSetBoolean">
+            <summary>Sets the stub of IdentityUser.set_EmailConfirmed(Boolean value)</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.EmailGet">
+            <summary>Sets the stub of IdentityUser.get_Email()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.EmailSetString">
+            <summary>Sets the stub of IdentityUser.set_Email(String value)</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubIdentityUser.InitializeStub">
+            <summary>Initializes a new instance of type StubIdentityUser</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.LockoutEnabled">
+            <summary>Sets the stub of IdentityUser.get_LockoutEnabled()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.LockoutEnabledGet">
+            <summary>Sets the stub of IdentityUser.get_LockoutEnabled()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.LockoutEnabledSetBoolean">
+            <summary>Sets the stub of IdentityUser.set_LockoutEnabled(Boolean value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.LockoutEndDateUtc">
+            <summary>Sets the stub of IdentityUser.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.LockoutEndDateUtcGet">
+            <summary>Sets the stub of IdentityUser.get_LockoutEndDateUtc()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.LockoutEndDateUtcSetNullableOfDateTime">
+            <summary>Sets the stub of IdentityUser.set_LockoutEndDateUtc(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PasswordHash">
+            <summary>Sets the stub of IdentityUser.get_PasswordHash()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PasswordHashGet">
+            <summary>Sets the stub of IdentityUser.get_PasswordHash()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PasswordHashSetString">
+            <summary>Sets the stub of IdentityUser.set_PasswordHash(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PhoneNumber">
+            <summary>Sets the stub of IdentityUser.get_PhoneNumber()</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PhoneNumberConfirmed">
+            <summary>Sets the stub of IdentityUser.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PhoneNumberConfirmedGet">
+            <summary>Sets the stub of IdentityUser.get_PhoneNumberConfirmed()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PhoneNumberConfirmedSetBoolean">
+            <summary>Sets the stub of IdentityUser.set_PhoneNumberConfirmed(Boolean value)</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PhoneNumberGet">
+            <summary>Sets the stub of IdentityUser.get_PhoneNumber()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.PhoneNumberSetString">
+            <summary>Sets the stub of IdentityUser.set_PhoneNumber(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.SecurityStamp">
+            <summary>Sets the stub of IdentityUser.get_SecurityStamp()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.SecurityStampGet">
+            <summary>Sets the stub of IdentityUser.get_SecurityStamp()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.SecurityStampSetString">
+            <summary>Sets the stub of IdentityUser.set_SecurityStamp(String value)</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubIdentityUser.TwoFactorEnabled">
+            <summary>Sets the stub of IdentityUser.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.TwoFactorEnabledGet">
+            <summary>Sets the stub of IdentityUser.get_TwoFactorEnabled()</summary>
+        </member>
+        <member name="F:AspNet.Identity.SQLite.Fakes.StubIdentityUser.TwoFactorEnabledSetBoolean">
+            <summary>Sets the stub of IdentityUser.set_TwoFactorEnabled(Boolean value)</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubRoleStore`1">
+            <summary>Stub type of AspNet.Identity.SQLite.RoleStore`1</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubRoleStore`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubRoleStore`1.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubRoleStore`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubRoleStore`1.InitializeStub">
+            <summary>Initializes a new instance of type StubRoleStore</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubRoleStore`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubRoleStore`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubRoleTable`1">
+            <summary>Stub type of AspNet.Identity.SQLite.RoleTable`1</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubRoleTable`1.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubRoleTable`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubRoleTable`1.InitializeStub">
+            <summary>Initializes a new instance of type StubRoleTable</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubRoleTable`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubRoleTable`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase">
+            <summary>Stub type of AspNet.Identity.SQLite.SQLiteDatabase</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase.#ctor(System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase.InitializeStub">
+            <summary>Initializes a new instance of type StubSQLiteDatabase</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubSQLiteDatabase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubUserClaimsTable">
+            <summary>Stub type of AspNet.Identity.SQLite.UserClaimsTable</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserClaimsTable.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserClaimsTable.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserClaimsTable.InitializeStub">
+            <summary>Initializes a new instance of type StubUserClaimsTable</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserClaimsTable.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserClaimsTable.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubUserLoginsTable">
+            <summary>Stub type of AspNet.Identity.SQLite.UserLoginsTable</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserLoginsTable.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserLoginsTable.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserLoginsTable.InitializeStub">
+            <summary>Initializes a new instance of type StubUserLoginsTable</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserLoginsTable.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserLoginsTable.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubUserRolesTable">
+            <summary>Stub type of AspNet.Identity.SQLite.UserRolesTable</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserRolesTable.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserRolesTable.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserRolesTable.InitializeStub">
+            <summary>Initializes a new instance of type StubUserRolesTable</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserRolesTable.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserRolesTable.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubUserStore`2">
+            <summary>Stub type of AspNet.Identity.SQLite.UserStore`2</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserStore`2.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserStore`2.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserStore`2.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserStore`2.InitializeStub">
+            <summary>Initializes a new instance of type StubUserStore</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserStore`2.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserStore`2.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:AspNet.Identity.SQLite.Fakes.StubUserTable`1">
+            <summary>Stub type of AspNet.Identity.SQLite.UserTable`1</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserTable`1.#ctor(AspNet.Identity.SQLite.SQLiteDatabase)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserTable`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:AspNet.Identity.SQLite.Fakes.StubUserTable`1.InitializeStub">
+            <summary>Initializes a new instance of type StubUserTable</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserTable`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:AspNet.Identity.SQLite.Fakes.StubUserTable`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

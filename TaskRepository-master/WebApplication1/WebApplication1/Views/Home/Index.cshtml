@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApplication1.Models.ViewModel.TopUser>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="center">
+    @if (TempData["success"] != null)
+    {
+        <p class="alert alert-success" id="successMessage">@TempData["success"]</p>
+    }
+</div>
+<div id="popup" class="messagepop pop">
+    <ul id="output"></ul>
+</div>
+@*<span class="tooltip" title="This is my span's tooltip message!">Some text</span>*@
+<div class="row marg-top">
+    <div class="col-md-5 panel-body">
+        <div id="input" contenteditable='true' class="editable col left-col" placeholder="Enter words here...">
+        </div>
+    </div>
+    <div id="topUsers">
+        @Html.Action("GetTopUsers", "Home")
+    </div>
+    @*<button id="qwe" class="click">click to add text</button>*@
+</div>
