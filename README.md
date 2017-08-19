@@ -1,4 +1,4 @@
-# TaskRepository
+# Language recognition
 Language recognition
 The program recognizes the language on which the word is written. The word can be short, the word may contain errors.
 
